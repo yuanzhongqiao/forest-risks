@@ -1,61 +1,52 @@
-<p align="left" >
-<a href='https://carbonplan.org'>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://carbonplan-assets.s3.amazonaws.com/monogram/light-small.png">
-  <img alt="CarbonPlan monogram." height="48" src="https://carbonplan-assets.s3.amazonaws.com/monogram/dark-small.png">
-</picture>
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p align="left" dir="auto">
+<a href="https://carbonplan.org" rel="nofollow">
+<themed-picture data-catalyst-inline="true" data-catalyst=""><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://camo.githubusercontent.com/308bc2cda543ae61bfdb15376b4f2b0bf7af83478bef052164f2993fc427a017/68747470733a2f2f636172626f6e706c616e2d6173736574732e73332e616d617a6f6e6177732e636f6d2f6d6f6e6f6772616d2f6c696768742d736d616c6c2e706e67" data-canonical-src="https://carbonplan-assets.s3.amazonaws.com/monogram/light-small.png">
+  <img alt="CarbonPlan 字母组合。" height="48" src="https://camo.githubusercontent.com/33498bf055cb3c9ab0498f142d45132a56cebbc0efa3b110ca09c10ad39a0dd1/68747470733a2f2f636172626f6e706c616e2d6173736574732e73332e616d617a6f6e6177732e636f6d2f6d6f6e6f6772616d2f6461726b2d736d616c6c2e706e67" data-canonical-src="https://carbonplan-assets.s3.amazonaws.com/monogram/dark-small.png" style="visibility:visible;max-width:100%;">
+</picture></themed-picture>
 </a>
 </p>
-
-# carbonplan / forest-risks
-
-**forest carbon potential and risks**
-
-[![CI](https://github.com/carbonplan/forest-risks/actions/workflows/main.yaml/badge.svg)](https://github.com/carbonplan/forest-risks/actions/workflows/main.yaml)
-![PyPI](https://img.shields.io/pypi/v/carbonplan-forest-risks)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4741329.svg)](https://doi.org/10.5281/zenodo.4741329)
-
-This repository includes our libraries and scripts for mapping forest carbon potential and risks.
-
-## install
-
-```shell
-pip install carbonplan[forest-risks]
-```
-
-## usage
-
-This codebase is organized into modules that implement data loading and model fitting as well as utitlies for plotting and other common tasks. Most anlayses involve some combination of the `load` and `fit` modules.
-
-The `scripts` folder contains tools to import data, run models, and parse results.
-
-The `regrid.py` and `convert.py` scripts are for converting the results to zarr files for storage and geojson for visualization purposes.
-
-Several notebooks are additionally provided that show the use of these tools for fitting models and inspecting model outputs. Notebooks are organized by the model type, e.g. `biomass`, `fire`, etc.
-
-## data products
-
-As part of this project we have created derived data products for five key variables relevant to evaluating forest carbon storage potential and risks.
-- `biomass` The potential carbon storage in forests assuming continued growth of existing forests.
-- `fire` The risks associated with forest fires.
-- `drought` The risk to forests from insect-related tree mortality.
-- `insects` The risk to forests from insect-related tree mortality.
-
-Gridded rasters for each of these layers are available for the continental United States at a 4km spatial scale. For biomass and fire, projections are shown through the end of the 21st century in decadal increments. Drought and insect models are still in development so we currently only show historical risks for these disturbance types.  All data are accessible via this [catalog](https://github.com/carbonplan/forest-risks/blob/master/carbonplan_forest_risks/data/catalog.yaml). Additional formats and download options will be provided in the future.
-
-## license
-
-All the code in this repository is [MIT](https://choosealicense.com/licenses/mit/)-licensed. When possible, the data used by this project is licensed using the [CC-BY-4.0](https://choosealicense.com/licenses/cc-by-4.0/) license. We include attribution and additional license information for third party datasets, and we request that you also maintain that attribution if using this data.
-
-## about us
-
-CarbonPlan is a nonprofit organization that uses data and science for climate action. We aim to improve the transparency and scientific integrity of climate solutions with open data and tools. Find out more at [carbonplan.org](https://carbonplan.org/) or get in touch by [opening an issue](https://github.com/carbonplan/forest-risks/issues/new) or [sending us an email](mailto:hello@carbonplan.org).
-
-## contributors
-
-This project is being developed by CarbonPlan staff and the following outside contributors:
-
-- Bill Anderegg (@anderegg)
-- Grayson Badgley (@badgley)
-- Anna Trugman
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">碳计划/森林风险</font></font></h1><a id="user-content-carbonplan--forest-risks" class="anchor" aria-label="永久链接：碳计划/森林风险" href="#carbonplan--forest-risks"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">森林碳潜力和风险</font></font></strong></p>
+<p dir="auto"><a href="https://github.com/carbonplan/forest-risks/actions/workflows/main.yaml"><img src="https://github.com/carbonplan/forest-risks/actions/workflows/main.yaml/badge.svg" alt="CI" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/1244de88bbc498b69be72e79e980b6cd370ac032d9522c364339ddbfe4ee569b/68747470733a2f2f696d672e736869656c64732e696f2f707970692f762f636172626f6e706c616e2d666f726573742d7269736b73"><img src="https://camo.githubusercontent.com/1244de88bbc498b69be72e79e980b6cd370ac032d9522c364339ddbfe4ee569b/68747470733a2f2f696d672e736869656c64732e696f2f707970692f762f636172626f6e706c616e2d666f726573742d7269736b73" alt="皮伊" data-canonical-src="https://img.shields.io/pypi/v/carbonplan-forest-risks" style="max-width: 100%;"></a>
+<a href="https://opensource.org/licenses/MIT" rel="nofollow"><img src="https://camo.githubusercontent.com/6552afb9038154d801c50b6e55a76db78a6787a8d6e2b5252a44864503c52887/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d4d49542d626c75652e737667" alt="许可证：麻省理工学院" data-canonical-src="https://img.shields.io/badge/License-MIT-blue.svg" style="max-width: 100%;"></a>
+<a href="https://doi.org/10.5281/zenodo.4741329" rel="nofollow"><img src="https://camo.githubusercontent.com/c7a2a49abb1ef185b10704d657cfabff39b39486c9d5e1793be4648df8ea6c26/68747470733a2f2f7a656e6f646f2e6f72672f62616467652f444f492f31302e353238312f7a656e6f646f2e343734313332392e737667" alt="DOI" data-canonical-src="https://zenodo.org/badge/DOI/10.5281/zenodo.4741329.svg" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该存储库包括我们用于绘制森林碳潜力和风险的库和脚本。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></h2><a id="user-content-install" class="anchor" aria-label="永久链接：安装" href="#install"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>pip install carbonplan[forest-risks]</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="pip install carbonplan[forest-risks]" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用法</font></font></h2><a id="user-content-usage" class="anchor" aria-label="永久链接：用法" href="#usage"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该代码库被组织成实现数据加载和模型拟合的模块以及用于绘图和其他常见任务的实用程序。</font><font style="vertical-align: inherit;">大多数分析涉及</font></font><code>load</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code>fit</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模块的某种组合。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该</font></font><code>scripts</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件夹包含用于导入数据、运行模型和解析结果的工具。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font><font style="vertical-align: inherit;">脚本用于将结果转换为用于存储的 zarr 文件和用于可视化目的的 geojson </font></font><code>regrid.py</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><code>convert.py</code><font style="vertical-align: inherit;"></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">另外还提&ZeroWidthSpace;&ZeroWidthSpace;供了几个笔记本，展示了如何使用这些工具来拟合模型和检查模型输出。</font><font style="vertical-align: inherit;">笔记本按模型类型组织，例如</font></font><code>biomass</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><code>fire</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">等。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据产品</font></font></h2><a id="user-content-data-products" class="anchor" aria-label="永久链接：数据产品" href="#data-products"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作为该项目的一部分，我们为与评估森林碳储存潜力和风险相关的五个关键变量创建了派生数据产品。</font></font></p>
+<ul dir="auto">
+<li><code>biomass</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">假设现有森林持续增长，森林中的潜在碳储存量。</font></font></li>
+<li><code>fire</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与森林火灾相关的风险。</font></font></li>
+<li><code>drought</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与昆虫相关的树木死亡对森林造成的风险。</font></font></li>
+<li><code>insects</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与昆虫相关的树木死亡对森林造成的风险。</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">每个图层的网格栅格可用于美国大陆 4 公里空间尺度。</font><font style="vertical-align: inherit;">对于生物质和火灾，预测以十年增量显示到 21 世纪末。</font><font style="vertical-align: inherit;">干旱和昆虫模型仍在开发中，因此我们目前仅显示这些干扰类型的历史风险。</font><font style="vertical-align: inherit;">所有数据均可通过此</font></font><a href="https://github.com/carbonplan/forest-risks/blob/master/carbonplan_forest_risks/data/catalog.yaml"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">访问。</font><font style="vertical-align: inherit;">未来将提供其他格式和下载选项。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></h2><a id="user-content-license" class="anchor" aria-label="永久链接：许可证" href="#license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此存储库中的所有代码均已获得</font></font><a href="https://choosealicense.com/licenses/mit/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MIT</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">许可。</font><font style="vertical-align: inherit;">如果可能，该项目使用的数据使用</font></font><a href="https://choosealicense.com/licenses/cc-by-4.0/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CC-BY-4.0</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">许可证进行许可。</font><font style="vertical-align: inherit;">我们包含第三方数据集的归属和附加许可信息，并且我们要求您在使用此数据时也维护该归属。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于我们</font></font></h2><a id="user-content-about-us" class="anchor" aria-label="永久链接：关于我们" href="#about-us"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CarbonPlan 是一个利用数据和科学开展气候行动的非营利组织。</font><font style="vertical-align: inherit;">我们的目标是通过开放数据和工具提高气候解决方案的透明度和科学完整性。</font></font><a href="https://carbonplan.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请访问Carbonplan.org</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解更多信息</font><font style="vertical-align: inherit;">，或者通过</font></font><a href="https://github.com/carbonplan/forest-risks/issues/new"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提出问题</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><a href="mailto:hello@carbonplan.org"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">向我们发送电子邮件来</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">联系我们。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献者</font></font></h2><a id="user-content-contributors" class="anchor" aria-label="永久链接：贡献者" href="#contributors"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该项目由 CarbonPlan 员工和以下外部贡献者开发：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">比尔·安德雷格 (@anderegg)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">格雷森·巴格利 (@badgley)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安娜·特鲁格曼</font></font></li>
+</ul>
+</article></div>
